@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  height: 30vh;
+  width: 100%;
+}
+
+.announcement-item {
+  width: 100%;
+  height: 10%;
+}
+
+.first-menu {
+  width: 100%;
+  height: 20%;
+}
+
+.first-menu-items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 110px;
+  padding-top: 8px;
+}
+
+.first-menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.first-menu-item a {
+  color: gray;
+}
+
+.first-menu-item a:hover {
+  color: rgb(15, 15, 15);
+}
+
+.navbar {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo img {
+  margin-left: 170px;
+}
+
+.main-search {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-text {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  color: gray;
+  font-weight: 500;
+  background-color: rgb(245, 241, 241);
+}
+
+.fa-magnifying-glass {
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgb(243, 103, 52);
+  position: absolute;
+  right: 15px;
+}
+
+.second-menu {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+}
+
+.second-menu-items a {
+  font-weight: 500;
+  color: black;
+}
+
+.second-menu ul li:hover {
+  color: orangered;
+}
+.second-menu ul a:hover {
+  color: orangered;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.fa-user,
+.fa-heart,
+.fa-basket-shopping {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.categories {
+  width: 100%;
+}
+
+.categories-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 70px;
+  padding-left: 130px;
+}
+
+.categories-item a {
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+}
+
+.categories-item a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+.categories-item-new a {
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+}
+
+.categories-item-new a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+.categories-item-new {
+  color: red;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider a {
+  color: black;
+  font-weight: 500;
+}
+.slider img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
