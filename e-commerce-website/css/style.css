@@ -139,11 +139,17 @@ li {
   font-size: 20px;
 }
 
-.categories {
+.main {
+  width: 100vw;
+  height: 300px;
+}
+
+.main-categories {
   width: 100%;
 }
 
-.categories-items {
+.main-categories-items {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -151,50 +157,91 @@ li {
   padding-left: 130px;
 }
 
-.categories-item a {
+.main-categories-item a {
   font-weight: 500;
   color: black;
   font-size: 18px;
 }
 
-.categories-item a:hover {
+.main-categories-item a:hover {
   text-decoration: underline;
   color: orangered;
 }
 
-.categories-item-new a {
+.main-categories-item-new a {
   font-weight: 500;
   color: black;
   font-size: 18px;
 }
 
-.categories-item-new a:hover {
+.main-categories-item-new a:hover {
   text-decoration: underline;
   color: orangered;
 }
 
-.categories-item-new {
-  color: red;
+.main-categories-item-new {
+  color: orangered;
   padding-right: 50px;
   font-size: 15px;
   font-weight: 500;
 }
 
-.main {
-  width: 100vw;
-  height: 100vh;
+.main-slider {
+  width: 1707px;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.slider {
-  width: 100%;
+.main-slider-item {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slider a {
-  color: black;
-  font-weight: 500;
-}
-.slider img {
+.main-slider-item img {
   width: 90px;
   height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   border-radius: 50%;
+}
+
+.main-slider-item h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.main-special {
+  width: 100%;
+  height: 30%;
+}
+
+.main-special-items {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-special-item {
+  height: 60%;
+  width: 300px;
+  background-color: #d2e3c8;
+  color: #005b41;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
