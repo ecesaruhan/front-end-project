@@ -9,8 +9,6 @@
 body {
   font-family: "Source Sans 3";
   font-weight: 600;
-  height: 1400px;
-  height: 100vh;
 }
 
 a {
@@ -24,7 +22,7 @@ header{
 }
 
 .main-header {
-  height: 200px;
+  height: 300px;
   width: 100%;
 }
 
@@ -201,7 +199,7 @@ li {
   margin-left: 100px;
   padding-left: 100px;
   overflow-x: scroll;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .main-slider-item {

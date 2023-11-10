@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Document</title>
+
+    <style>
+        #main-shopping-cart {
+            width: 1700px;
+            height: 600px;
+        }
+
+        #main-shopping-cart-container {
+            width: 90%;
+            height: 100%;
+            background-color: aqua;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #my-cart {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+        }
+
+        .my-cart-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #confirm-cart {
+            width: 30%;
+            height: 100%;
+        }
+
+        .my-cart-container div {
+            display: flex;
+
+        }
+
+        #bianco-lucci-seller input {
+            width: 2%;
+            margin-right: 15px;
+        }
+
+        #bianco-lucci-seller label {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        #selected-product {
+            display: flex;
+            padding-top: 40px;
+        }
+
+        #checkbox-container {
+            width: 100%;
+        }
+
+        #selected-product input {
+            width: 3%;
+            margin-right: 10px;
+        }
+
+        #selected-image {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        #images-checkbox {
+            display: table;
+        }
+
+        #images-checkbox a {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        #number-image {
+            width: 130px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #selected-product-price {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #selected-product-price>h1 {
+            font-size: 25px;
+            color: orangered
+        }
+
+        #trash-icon {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .confirm-cart-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .confirm-button {
+            height: 20%;
+        }
+
+        #order-abstract {
+            height: 60%;
+        }
+
+        #order-abstract {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="announcement">
+            <a href="/">
+                <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
+            </a>
+        </div>
+
+        <div class="first-menu">
+            <ul class="first-menu-items">
+                <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
+                <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
+                <li class="first-menu-item"><a href="/">Hakkımızda</a></li>
+                <li class="first-menu-item"><a href="/">Yardım & Destek</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a class="main-logo" href="/">
+                <img src="images/trendyol-100.yıl.png" style="width: 280px; height: 50px" alt="" />
+            </a>
+
+            <div class="main-search">
+                <input class="search-text" type="text" value="Aradığınız ürün, kategori veya markayı yazınız" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <nav class="second-menu">
+                <ul class="second-menu-items">
+                    <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
+
+                    <li>
+                        <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-categories">
+            <nav class="header-categories-items">
+                <ul>
+                    <li class="categories-item"><a href="/">Kadın</a></li>
+                    <li class="categories-item"><a href="/">Erkek</a></li>
+                    <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
+                    <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
+                    <li class="categories-item"><a href="/">Süpermarket</a></li>
+                    <li class="categories-item"><a href="/">Kozmetik</a></li>
+                    <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
+                    <li class="categories-item"><a href="/">Elektronik</a></li>
+                    <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
+                    <li style="color: red; font-weight: 500;" class="categories-item-new">
+                        <a href="/">Çok Satanlar</a> Yeni
+                    </li>
+                    <li style="color: red; font-weight: 500;" class="categories-item-new">
+                        <a href="/">Flaş Ürünler</a> Yeni
+                    </li>
+
+                </ul>
+            </nav>
+            <hr style="margin: 12px 0" />
+        </div>
+        </section>
+    </header>
+
+    <main id="main-shopping-cart">
+        <div id="main-shopping-cart-container">
+            <section id="my-cart">
+                <div class="my-cart-container">
+                    <h1 style="margin-bottom: 30px; font-weight: 500; font-size: 30px;">Sepetim (1 Ürün)</h1>
+                    <div id="Login-items">
+                        <i style="font-size: 25px; padding: 0 15px;" class="fa-regular fa-user"></i>
+                        <p style="font-size: 18px; font-weight: 500; margin-right: 10px;">Alışverişini daha hızlı
+                            tamamlamak için</p>
+                        <a style="text-decoration: underline; color: orange; font-weight: 500; font-size: 18px;"
+                            href="/">Giriş Yap</a>
+                    </div>
+                </div>
+
+                <div class="my-cart-container">
+                    <div id="bianco-lucci-seller">
+                        <input type="checkbox" id="seller">
+                        <label for="seller-checkbox">
+                            <p style="display: inline-block; font-size: 18px; color: gray;">Satıcı:<a href="/"></a>
+                                <span style="color: black;">BIANCO LUCCI</span>
+                            </p>
+                            <a style="font-size: 13px; color: white; background-color: green; padding: 0 5px; border-radius: 5px;"
+                                href="/">8.6</a>
+                            <a href="/"><i class="fa-solid fa-chevron-right"></i></a>
+                        </label>
+
+                    </div>
+
+                    <div id="selected-product">
+                        <div id="checkbox-container">
+                            <input type="checkbox" id="my-product">
+                            <label for="my-product">
+                                <div id="images-checkbox">
+                                    <img id="selected-image" src="images/BiancoLucci.webp" alt="">
+                                    <a href="/">Bianco Lucci Kadın Yakası İlikli Balıkçı Yaka Çizgili Triko Kazak <div
+                                            style="font-size: 15px; color: gray;">
+                                            Tahmini Kargoya Teslim: 8 gün içinde</div></a>
+
+                                </div>
+                            </label>
+                        </div>
+
+                        <div id="selected-product-price">
+                            <h1>268 TL</h1>
+                        </div>
+
+                        <div id="trash-icon">
+                            <i style="color: gray; font-size: 20px;" class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="confirm-cart">
+                <div class="confirm-cart-container">
+                    <div class="confirm-button">Siparişi Onayla</div>
+
+                    <div id="order-abstract">
+
+                        <h1>Sipariş Özeti</h1>
+                        <div id="total-price-container">
+                            <div>hhhh</div>
+
+                        </div>
+                        <div id="total-price">hhhhhh</div>
+                    </div>
+                    <div class="confirm-button">Siparişi Onayla</div>
+
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
