@@ -207,6 +207,7 @@ li {
   column-gap: 60px;
   margin-left: 100px;
   padding-left: 100px;
+  overflow-x: scroll;
 }
 
 .main-slider-item {

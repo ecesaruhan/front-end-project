@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Trendyol</title>
+
+    <style>
+        .main-product {
+            width: 100%;
+            height: 813px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .main-product-details {
+            width: 90%;
+            height: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding-top: 100px;
+            column-gap: 10px;
+            background-color: red;
+        }
+
+        .main-product-items {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #main-image {
+            width: 600px;
+            height: 800px;
+        }
+
+        .image-card-items {
+            width: 500px;
+            height: 900px;
+        }
+
+        .image-card {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .image {
+            width: 500px;
+            height: 750px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .star {
+            position: absolute;
+            top: 300px;
+            left: 470px;
+        }
+
+        .cargo-free-tag {
+            position: absolute;
+            top: 260px;
+            left: 470px;
+        }
+
+        .image-slider {
+            width: 400px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 15px;
+        }
+
+        .image-slider-item {
+            width: 45px;
+            height: 70px;
+            border-radius: 10px;
+            margin-top: 10px;
+
+        }
+
+        #main-info {
+            width: 800px;
+            height: 770px;
+        }
+
+
+        .main-info-items {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        #bianco-title {
+            width: 524px;
+            height: 52px;
+        }
+
+        .main-info-comment {
+            width: 445px;
+            height: 18px;
+        }
+
+
+        .rating {
+            width: 107px;
+            height: 18px;
+        }
+
+        .evaluation {
+            width: 118px;
+            height: 17px;
+        }
+
+
+        .ask-question {
+            width: 82px;
+            height: 17px;
+        }
+
+        .favourite {
+            width: 82px;
+            height: 17px;
+        }
+
+
+        #main-price {
+            width: 223px;
+            height: 64px;
+        }
+
+        .dumping {
+            width: 223px;
+            height: 24px;
+        }
+
+        .dumping-price {
+            width: 223px;
+            height: 40px;
+        }
+
+        .image-color-items {
+            width: 524px;
+            height: 112px;
+        }
+
+        .color-title {
+            width: 524px;
+            height: 18px;
+        }
+
+        .color-options {
+            width: 524px;
+            height: 92px;
+        }
+
+        .color-options img {
+            width: 50px;
+            height: 92px;
+        }
+
+        .color-option {
+            width: 50px;
+            height: 92px;
+        }
+
+
+        #user-size-suggestion p {
+            width: 524px;
+            height: 35px;
+        }
+
+        .basket-heart {
+            width: 524px;
+            height: 58px;
+        }
+
+        #basket-button {
+            width: 461px;
+            height: 48px;
+        }
+
+        .heart-ikon {
+            width: 63px;
+            height: 50px;
+        }
+
+        #cargo-deliver {
+            width: 524px;
+            height: 43px;
+        }
+
+        #featured {
+            width: 524px;
+            height: 285px;
+        }
+
+        #all-property-button {
+            width: 332px;
+            height: 48px;
+        }
+
+
+        #main-widget {
+            width: 228px;
+            height: 776px;
+        }
+
+        #store-about {
+            width: 228px;
+            height: 166px;
+        }
+
+
+
+
+
+
+        .trendyol {
+            width: 212px;
+            height: 166px;
+        }
+
+        .follow {
+            width: 212px;
+            height: 200px;
+        }
+
+        .seller-question {
+            width: 212px;
+            height: 32px;
+        }
+
+        .go-store {
+            width: 212px;
+            height: 32px;
+        }
+
+        #other-seller {
+            width: 228px;
+            height: 200px;
+        }
+
+        #other-seller-title {
+            width: 228px;
+            height: 18px;
+        }
+
+        #other-seller-brand {
+            width: 194px;
+            height: 16px;
+        }
+
+        #cargo-deliver-prediction {
+            width: 194px;
+            height: 16px;
+        }
+
+        #cargo-free {
+            width: 194px;
+            height: 27px;
+        }
+
+        #other-seller-price {
+            width: 194px;
+            height: 20px;
+        }
+
+        #see-all {
+            width: 180px;
+            height: 31px;
+        }
+
+
+        .widget-item {
+            width: 228px;
+            height: 261px;
+        }
+
+
+        #featured-comment {
+            width: 228px;
+            height: 18px;
+        }
+
+        .user-suggestion {
+            width: 212px;
+            height: 48px;
+        }
+
+        .rating {
+            width: 196px;
+            height: 14px;
+        }
+
+        #comment-example {
+            width: 196px;
+            height: 73px;
+        }
+
+        #read-more {
+            width: 180px;
+            height: 31px;
+        }
+
+
+
+
+
+
+        .rating>input {
+            display: none;
+        }
+
+        .fa-star {
+            color: orange;
+        }
+
+        .evaluation>a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .ask-question>a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .favourite>a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .fa-chevron-right {
+            padding-left: 10px;
+        }
+
+        .fa-chevron-left:hover,
+        .fa-chevron-right:hover {
+            color: orange;
+        }
+
+        .fa-heart:hover {
+            color: orange;
+        }
+
+        .propert-items li {
+            color: rgb(73, 73, 73);
+        }
+
+        .go-button {
+            display: inline-block;
+            background-color: aquamarine;
+            padding: 10px 50px;
+            border-radius: 20px;
+            background-color: rgb(228, 228, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="announcement">
+            <a href="/">
+                <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
+            </a>
+        </div>
+
+        <div class="first-menu">
+            <ul class="first-menu-items">
+                <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
+                <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
+                <li class="first-menu-item"><a href="/">Hakkımızda</a></li>
+                <li class="first-menu-item"><a href="/">Yardım & Destek</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar">
+            <a class="main-logo" href="/">
+                <img src="images/trendyol-100.yıl.png" style="width: 280px; height: 50px" alt="" />
+            </a>
+
+            <div class="main-search">
+                <input class="search-text" type="text" value="Aradığınız ürün, kategori veya markayı yazınız" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <nav class="second-menu">
+                <ul class="second-menu-items">
+                    <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
+
+                    <li>
+                        <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-product">
+        <div class="main-product-details">
+            <section class="main-product-items" id="main-image">
+                <div class="image-card-items">
+                    <a class="image-card" href="/">
+                        <div class="image-box">
+                            <img class="image" src="images/BiancoLucci.webp" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
+                                src="images/encoksatan.webp" alt="">
+                            <img class="cargo-free-tag" style="width: 80px; height: 30px; border-radius: 5px;"
+                                src="images/kargobedava.png" alt="">
+                        </div>
+
+                        <div class="image-slider">
+                            <img class="image-slider-item" src="images/BiancoLucci.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci2.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci3.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci4.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci5.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci6.webp" alt="">
+                            <img class="image-slider-item" src="images/BiancoLucci7.webp" alt="">
+                            <img class="image-slider-item" src="images/renk11.webp" alt="">
+
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="main-product-items" id="main-info">
+                <div class="main-info-items">
+                    <!-- <div class="main-info-item"><img style="width: 25px; height: 30px;"
+                            src="images/ençoksatan1.ürün.png" alt="">Kadın Kazak kategorisinde en
+                        çok satılan 1.ürün<i style="margin-left: 5px; font-size: 10px;"
+                            class="fa-solid fa-chevron-right"></i></div> -->
+                    <div id="bianco-title" class="main-info-item"><a style="text-decoration: underline;"
+                            class="image-card" href="/"><b>Bianco
+                                Lucci</b></a>Kadın Yakası İlikli Balıkçı
+                        Yaka Çizgili Triko Kazak 20223207
+                    </div>
+
+                    <div class="main-info-item">
+                        <div class="main-info-comment">
+                            <div class="rating">
+                                <h1>4.7</h1>
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5"><i class="fa-solid fa-star"></i></label>
+                                <input type="radio" name="rating" value="4" id="4">
+                                <label for="4"><i class="fa-solid fa-star"></i></i></label>
+                                <input type="radio" name="rating" value="3" id="3">
+                                <label for="3"><i class="fa-solid fa-star"></i></i></label>
+                                <input type="radio" name="rating" value="2" id="2">
+                                <label for="2"><i class="fa-solid fa-star"></i></i></label>
+                                <input type="radio" name="rating" value="1" id="1">
+                                <label for="1"><i class="fa-solid fa-star"></i></label>
+                            </div>
+
+                            <div class="evaluation">
+                                <a href="/">
+                                    <p><b>24064 </b>Değerlendirme<img style="width: 25px; height: 30px;"
+                                            src="images/değerlendirme-kamera.webp" alt=""></p>
+                                </a>
+                            </div>
+
+                            <div class="ask-question">
+                                <a href="/">
+                                    <p><b>1326 </b>Soru & Cevap</p>
+                                </a>
+                            </div>
+
+                            <div class="favourite">
+                                <a href="/">
+                                    <p><i class="fa-regular fa-heart"></i><b>620091 </b>Favori</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="main-price" class="main-info-item">
+                        <div class="dumping">
+                            <a style="color: rgb(204, 6, 6);" href="/"><i style=" padding-right: 10px;"
+                                    class="fa-solid fa-arrow-trend-down"></i>Son 30
+                                Günün En Düşük Fiyatı</a>
+                        </div>
+                        <div class="dumping-price">
+                            <a style="font-size: 20px;" href="/">
+                                <p style="color: rgb(194, 8, 8);"><del style="color: gray;  padding-right: 10px;">290,13
+                                        TL</del>268 TL</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div class="main-info-item">
+
+                        <div class="image-color-items">
+                            <div class="color-title">
+                                <p>Renk:<i style="color: gray; padding-left: 10px;" class="fa-solid fa-circle-info"></i>
+                                </p>
+                                <a href="/">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="color-options">
+                                <a class="color-option" href="/"><img src="images/BiancoLucci.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk2.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk3.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk4.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk5.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk6.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk7.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk8.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk9.webp" alt=""></a>
+                                <a class="color-option" href="/"><img src="images/renk10.webp" alt=""></a>
+                            </div>
+
+                            <div id="user-size-suggestion">
+                                <p><img src="images/askı.png" alt="">Kullanıcıların çoğu kendi bedeninizi almanızı
+                                    öneriyor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-info-item">
+                        <div class="basket-heart">
+                            <div id="basket-button" class="add-basket">
+                                <a href="/">Sepete Ekle</a>
+                                <!-- Buton da olabilir -->
+                            </div>
+
+                            <div class="heart-ikon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-info-item">
+                        <p id="cargo-deliver" style="color: rgb(68, 67, 67);"><i style="padding-right: 5px;"
+                                class="fa-solid fa-box-open"></i><b style="padding-right: 5px;">Tahmini Kargoya
+                                Teslim:</b>
+                            5
+                            gün içinde</p>
+                    </div>
+
+                    <div class="main-info-item">
+                        <div id="featured"></div>
+                        <p>Öne Çıkan Özellikler:</p>
+                        <ul class="propert-items">
+                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bu ürün <a
+                                    style="text-decoration: underline; padding-right: 5px; color: rgb(31, 30, 30);"
+                                    href="">Trendyol</a>tarafından gönderilecektir.</li>
+                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Kampanya
+                                fiyatından
+                                satılmak üzere 100 adetten fazla stok sunulmuştur.</li>
+                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bir ürün, birden
+                                fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan
+                                ürünlerin
+                                satıcıları
+                                ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki
+                                promosyonlara, kargonun bedava
+                                olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin
+                                stok
+                                ve kategorileri bilgilerine
+                                göre sıralanmaktadır.</li>
+                        </ul>
+                    </div>
+
+                    <div class="main-info-item">
+                        <a id="all-property-button" class="go-button" href="/">ÜRÜNÜN TÜM ÖZELLİKLERİ<i
+                                style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-product-items" id="main-widget">
+
+                <div id="store-about" class="widget-item">
+                    <div style="background-color: #ebf5ff; display: inline-block; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 60px; border-radius: 10px;"
+                        class="trendyol">
+                        <a style="color: blue; font-size: 18px;" href="/">Trendyol<i style="padding-left: 5px;"
+                                class="fa-solid fa-circle-check"></i>
+                            <p
+                                style="display: inline-block; padding: 0 5px; background-color: rgb(13, 158, 13); color: white; margin-left: 5px; font-size: 15px; border-radius: 5px;">
+                                8.7</p>
+                            <i style="color: blue; padding-left: 10px;" class="fa-solid fa-circle-info"></i>
+                            <p style="color: gray; font-size: 15px;">1.9M Takipçi</p>
+                        </a>
+                    </div>
+                    <div class="follow">
+                        <i style="background-color: blue; display: inline-block; padding: 12px 10px; background-color: rgb(228, 228, 255); color: gray; border-radius: 5px"
+                            class="fa-solid fa-gift"></i>
+                        <a href="/">Takip Et</a>
+                    </div>
+                    <div class="seller-question">
+                        <i style="background-color: blue; display: inline-block; padding: 12px 10px; background-color: rgb(228, 228, 255); color: gray; border-radius: 5px;"
+                            class="fa-solid fa-comment-dots"></i>
+                        <a href="/">Satıcı Soruları</a>
+                    </div>
+                    <div class="go-store">
+                        <a class="go-button" href="/">MAĞAZAYA GİT<i style="padding-left: 10px;"
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div id="other-seller" class="widget-item">
+                    <p id="other-seller-title" style="font-size: 14px; color: gray;">ÜRÜNÜN DİĞER SATICILARI</p>
+                    <a id="other-seller-brand" href="/">BIANCA LUCCI<p
+                            style="display: inline-block; padding: 0 5px; background-color: rgb(13, 158, 13); color: white; margin-left: 5px; font-size: 15px; border-radius: 5px;">
+                            8.6</p></a>
+                    <p id="cargo-deliver-prediction" style="color: rgb(90, 88, 88);">Tahmini Kargoya Teslim: 8 gün
+                        içinde</p>
+                    <p id="cargo-free"
+                        style=" display: inline-block; background-color: rgb(228, 228, 255); padding: 3px 6px; border-radius: 3px;  ">
+                        Kargo
+                        Bedava</p>
+                    <h1 id="other-seller-price" style="color: rgb(255, 108, 54);">364,90 TL</h1>
+                    <a id="see-all" class="go-button"
+                        style="display: inline-block; background-color: aquamarine; padding: 10px 50px; border-radius: 20px; background-color: rgb(228, 228, 255);"
+                        href="/">TÜMÜNÜ
+                        GÖR<i style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+
+
+
+                </div>
+
+                <div class="widget-item">
+
+                    <p id="featured-comment" style="font-size: 14px; color: gray;">ÖNE ÇIKAN YORUM</p>
+                    <div class="user-suggestion">
+                        <p><img src="images/askı.png" alt="">Kullanıcıların çoğu kendi bedeninizi almanızı öneriyor.</p>
+                    </div>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="rating" value="4" id="4">
+                        <label for="4"><i class="fa-solid fa-star"></i></i></label>
+                        <input type="radio" name="rating" value="3" id="3">
+                        <label for="3"><i class="fa-solid fa-star"></i></i></label>
+                        <input type="radio" name="rating" value="2" id="2">
+                        <label for="2"><i class="fa-solid fa-star"></i></i></label>
+                        <input type="radio" name="rating" value="1" id="1">
+                        <label for="1"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                    <p id="comment-example">anneme hediye almıştım beden M-XL ama bu standart beden olmasına rağmen
+                        üstüne ço...</p>
+                    <a id="read-more" href="/">Devamını Oku<i class="fa-solid fa-chevron-right"></i></a>
+                    <p>M** Ş** 25 Ocak 2023</p>
+                    <a class="go-button" href="/">DAHA FAZLA YORUM<i style="padding-left: 10px;"
+                            class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy;2023 DSM Grup Danışmanlık İletişim ve Satış Tic.A.Ş.-Her Hakkı Saklıdır.</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="/">Çerez Tercihleri</a>
+            <a href="/">KVK ve Gizlilik Politikası</a>
+            <a href="/">DSM Grup</a>
+            <a href="/">Kullanım Koşullar</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
