@@ -152,11 +152,12 @@ li {
   height: 40%;
 }
 
-.main-categories {
+.header-categories {
   width: 100%;
+  margin-top: 20px;
 }
 
-.main-categories-items {
+.header-categories-items {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -166,19 +167,11 @@ li {
   color: black;
 }
 
-.categories-item{
-
-}
-
-.main-categories-item li{
-
-}
-
-.main-categories-item a {
+.header-categories-item a {
   font-size: 18px;
 }
 
-.main-categories-items a:hover {
+.header-categories-items a:hover {
   text-decoration: underline;
   color: orangered;
 }
@@ -199,7 +192,7 @@ li {
 }
 
 .main-slider {
-  width: 80%;
+  width: 85%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -208,6 +201,7 @@ li {
   margin-left: 100px;
   padding-left: 100px;
   overflow-x: scroll;
+  margin-top: 40px;
 }
 
 .main-slider-item {

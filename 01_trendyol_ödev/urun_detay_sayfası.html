@@ -12,19 +12,19 @@
         .main-product {
             width: 100%;
             height: 813px;
+            margin: 20px auto;
             display: flex;
             justify-content: space-around;
         }
 
         .main-product-details {
             width: 90%;
-            height: 1200px;
+            height: 1000px;
             display: flex;
             justify-content: space-between;
             align-items: start;
             padding-top: 100px;
-            column-gap: 10px;
-            background-color: red;
+            column-gap: 30px;
         }
 
         .main-product-items {
@@ -35,6 +35,7 @@
             align-items: center;
 
         }
+
 
         #main-image {
             width: 600px;
@@ -61,14 +62,14 @@
 
         .star {
             position: absolute;
-            top: 300px;
-            left: 470px;
+            top: 370px;
+            left: 480px;
         }
 
         .cargo-free-tag {
             position: absolute;
-            top: 260px;
-            left: 470px;
+            top: 320px;
+            left: 480px;
         }
 
         .image-slider {
@@ -88,7 +89,7 @@
         }
 
         #main-info {
-            width: 800px;
+            width: 80%;
             height: 770px;
         }
 
@@ -98,73 +99,141 @@
             height: 100%;
         }
 
+        .main-info-item {
+            width: 100%;
+        }
+
+        #number-one {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        #number-one img {
+            margin-right: 10px;
+        }
 
         #bianco-title {
-            width: 524px;
-            height: 52px;
+            width: 100%;
+            height: 65px;
+            font-size: 25px;
         }
 
         .main-info-comment {
-            width: 445px;
-            height: 18px;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 10px;
         }
 
-
         .rating {
-            width: 107px;
-            height: 18px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rating h1 {
+            padding-right: 10px;
+            font-size: 18px;
         }
 
         .evaluation {
-            width: 118px;
-            height: 17px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .evaluation img {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
         }
 
 
         .ask-question {
-            width: 82px;
-            height: 17px;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
 
         .favourite {
-            width: 82px;
+            width: 100%;
             height: 17px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
 
-
         #main-price {
-            width: 223px;
-            height: 64px;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-top: 20px;
         }
 
         .dumping {
-            width: 223px;
-            height: 24px;
+            width: 50%;
+            height: 30px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
 
+
         .dumping-price {
-            width: 223px;
-            height: 40px;
+            width: 50%;
+            height: 30px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
 
         .image-color-items {
-            width: 524px;
-            height: 112px;
+            width: 100%;
+            height: 200px;
+        }
+
+        #info-color-options {
+            width: 100%;
+            height: 200px;
         }
 
         .color-title {
-            width: 524px;
-            height: 18px;
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
         }
 
         .color-options {
-            width: 524px;
+            width: 100%;
             height: 92px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
         }
 
         .color-options img {
-            width: 50px;
-            height: 92px;
+            width: 60px;
+            height: 80px;
+            border-radius: 10px;
         }
 
         .color-option {
@@ -172,149 +241,253 @@
             height: 92px;
         }
 
+        #user-size-suggestion {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* column-gap: 10px; */
+        }
 
         #user-size-suggestion p {
-            width: 524px;
-            height: 35px;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
 
         .basket-heart {
-            width: 524px;
-            height: 58px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #basket-button-container {
+            width: 90%;
+            height: 100%;
+            display: table;
         }
 
         #basket-button {
-            width: 461px;
-            height: 48px;
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f27a1a;
+        }
+
+        #basket-button>a {
+            font-size: 23px;
+            color: white;
+        }
+
+        #heart-ikon-container {
+            width: 10%;
+            height: 100%;
+            display: table;
         }
 
         .heart-ikon {
-            width: 63px;
-            height: 50px;
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: end;
+        }
+
+        .heart-ikon>i {
+            font-size: 40px;
+            color: gray;
+        }
+
+
+        #cargo-deliver-container {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 20px;
         }
 
         #cargo-deliver {
-            width: 524px;
-            height: 43px;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            background-color: #faf9f9;
+            border-radius: 10px;
         }
+
 
         #featured {
-            width: 524px;
+            width: 100½;
             height: 285px;
+            padding-top: 40px;
         }
+
+        #featured>ul {
+            padding-top: 20px;
+        }
+
+        .property-item {
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        #main-info-button {
+            width: 50%;
+            height: 100%;
+            display: table;
+            margin: 0 auto;
+            margin-top: -10px;
+        }
+
 
         #all-property-button {
-            width: 332px;
+            width: 100%;
             height: 48px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
         }
 
-
         #main-widget {
-            width: 228px;
-            height: 776px;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+
         }
 
         #store-about {
-            width: 228px;
-            height: 166px;
+            width: 100%;
+            height: 250px;
+            margin: 0 auto;
         }
 
-
-
-
-
-
         .trendyol {
-            width: 212px;
-            height: 166px;
+            width: 90%;
+            height: 70px;
+            padding-left: 15px;
+            padding-top: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .trendyol>a {
+            width: 80%;
+            text-align: start;
         }
 
         .follow {
-            width: 212px;
-            height: 200px;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
         }
 
         .seller-question {
-            width: 212px;
-            height: 32px;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #store-about>.go-store {
+            text-align: start;
         }
 
         .go-store {
-            width: 212px;
+            width: 100%;
             height: 32px;
+            margin-bottom: 50px;
         }
 
         #other-seller {
-            width: 228px;
-            height: 200px;
+            width: 100%;
+            height: 250px;
         }
 
+
         #other-seller-title {
-            width: 228px;
-            height: 18px;
+            width: 100%;
+            height: 30px;
         }
 
         #other-seller-brand {
-            width: 194px;
+            width: 100%;
             height: 16px;
         }
 
         #cargo-deliver-prediction {
-            width: 194px;
-            height: 16px;
+            width: 95%;
+            height: 30px;
+            margin: 10px 0;
+
         }
 
         #cargo-free {
-            width: 194px;
-            height: 27px;
+            width: 40%;
+            height: 30px;
         }
 
         #other-seller-price {
-            width: 194px;
-            height: 20px;
+            width: 100%;
+            height: 40px;
+            margin: 10px 0;
+        }
+
+        #see-all-container {
+            width: 100%;
+            height: 50px;
+
         }
 
         #see-all {
-            width: 180px;
-            height: 31px;
+            width: 80%;
+            height: 40px;
+            display: table;
+            text-align: center;
+
         }
 
+        #see-all>a {
+            display: table-cell;
+            vertical-align: middle;
+        }
 
         .widget-item {
-            width: 228px;
-            height: 261px;
+            width: 100%;
+            height: 250px;
         }
 
-
-        #featured-comment {
-            width: 228px;
-            height: 18px;
-        }
-
-        .user-suggestion {
-            width: 212px;
-            height: 48px;
-        }
 
         .rating {
-            width: 196px;
-            height: 14px;
+            width: 100%;
+            height: 60px;
         }
 
         #comment-example {
-            width: 196px;
-            height: 73px;
+            width: 100%;
+            height: 90px;
         }
 
         #read-more {
-            width: 180px;
-            height: 31px;
+            width: 100%;
+            height: 60px;
         }
 
-
-
-
-
+        .go-button {
+            background-color: aquamarine;
+            padding: 10px 50px;
+            border-radius: 20px;
+            background-color: rgb(228, 228, 255);
+        }
 
         .rating>input {
             display: none;
@@ -354,14 +527,6 @@
 
         .propert-items li {
             color: rgb(73, 73, 73);
-        }
-
-        .go-button {
-            display: inline-block;
-            background-color: aquamarine;
-            padding: 10px 50px;
-            border-radius: 20px;
-            background-color: rgb(228, 228, 255);
         }
     </style>
 </head>
@@ -407,6 +572,31 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="header-categories">
+            <nav class="header-categories-items">
+                <ul>
+                    <li class="categories-item"><a href="/">Kadın</a></li>
+                    <li class="categories-item"><a href="/">Erkek</a></li>
+                    <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
+                    <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
+                    <li class="categories-item"><a href="/">Süpermarket</a></li>
+                    <li class="categories-item"><a href="/">Kozmetik</a></li>
+                    <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
+                    <li class="categories-item"><a href="/">Elektronik</a></li>
+                    <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
+                    <li style="color: red; font-weight: 500;" class="categories-item-new">
+                        <a href="/">Çok Satanlar</a> Yeni
+                    </li>
+                    <li style="color: red; font-weight: 500;" class="categories-item-new">
+                        <a href="/">Flaş Ürünler</a> Yeni
+                    </li>
+
+                </ul>
+            </nav>
+            <hr style="margin: 12px 0" />
+        </div>
+        </section>
     </header>
 
     <main class="main-product">
@@ -439,13 +629,18 @@
 
             <section class="main-product-items" id="main-info">
                 <div class="main-info-items">
-                    <!-- <div class="main-info-item"><img style="width: 25px; height: 30px;"
-                            src="images/ençoksatan1.ürün.png" alt="">Kadın Kazak kategorisinde en
-                        çok satılan 1.ürün<i style="margin-left: 5px; font-size: 10px;"
-                            class="fa-solid fa-chevron-right"></i></div> -->
-                    <div id="bianco-title" class="main-info-item"><a style="text-decoration: underline;"
-                            class="image-card" href="/"><b>Bianco
-                                Lucci</b></a>Kadın Yakası İlikli Balıkçı
+
+
+                    <div id="number-one" class="main-info-item">
+                        <img style="width: 25px; height: 30px;" src="images/ençoksatan1.ürün.png" alt="">Kadın Kazak
+                        kategorisinde en
+                        çok satılan 1.ürün
+                        <i style="margin-left: 5px; font-size: 10px;" class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+
+                    <div id="bianco-title" class="main-info-item">Bianco
+                        Lucci Kadın Yakası İlikli Balıkçı
                         Yaka Çizgili Triko Kazak 20223207
                     </div>
 
@@ -467,7 +662,7 @@
 
                             <div class="evaluation">
                                 <a href="/">
-                                    <p><b>24064 </b>Değerlendirme<img style="width: 25px; height: 30px;"
+                                    <p><b>24064 </b>Değerlendirme<img style="width: 20px; height: 20px;"
                                             src="images/değerlendirme-kamera.webp" alt=""></p>
                                 </a>
                             </div>
@@ -503,7 +698,7 @@
                     <hr>
                     <br>
 
-                    <div class="main-info-item">
+                    <div id="info-color-options" class="main-info-item">
 
                         <div class="image-color-items">
                             <div class="color-title">
@@ -528,7 +723,9 @@
                             </div>
 
                             <div id="user-size-suggestion">
-                                <p><img src="images/askı.png" alt="">Kullanıcıların çoğu kendi bedeninizi almanızı
+                                <p><img style="padding-right: 10px; width: 40px; height: 20px;" src="images/askı.png"
+                                        alt="">Kullanıcıların çoğu
+                                    kendi bedeninizi almanızı
                                     öneriyor.
                                 </p>
                             </div>
@@ -537,51 +734,62 @@
 
                     <div class="main-info-item">
                         <div class="basket-heart">
-                            <div id="basket-button" class="add-basket">
-                                <a href="/">Sepete Ekle</a>
-                                <!-- Buton da olabilir -->
+                            <div id="basket-button-container">
+                                <div id="basket-button" class="add-basket">
+                                    <a href="/">Sepete Ekle</a>
+                                    <!-- Buton da olabilir -->
+                                </div>
                             </div>
-
-                            <div class="heart-ikon">
-                                <i class="fa-regular fa-heart"></i>
+                            <div id="heart-ikon-container">
+                                <div class="heart-ikon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="main-info-item">
-                        <p id="cargo-deliver" style="color: rgb(68, 67, 67);"><i style="padding-right: 5px;"
-                                class="fa-solid fa-box-open"></i><b style="padding-right: 5px;">Tahmini Kargoya
-                                Teslim:</b>
-                            5
-                            gün içinde</p>
+                        <div id="cargo-deliver-container">
+                            <p id="cargo-deliver" style="color: rgb(68, 67, 67);"><i style="padding-right: 5px;"
+                                    class="fa-solid fa-box-open"></i><b style="padding-right: 5px;">Tahmini Kargoya
+                                    Teslim:</b>
+                                5
+                                gün içinde</p>
+                        </div>
                     </div>
 
                     <div class="main-info-item">
-                        <div id="featured"></div>
-                        <p>Öne Çıkan Özellikler:</p>
-                        <ul class="propert-items">
-                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bu ürün <a
-                                    style="text-decoration: underline; padding-right: 5px; color: rgb(31, 30, 30);"
-                                    href="">Trendyol</a>tarafından gönderilecektir.</li>
-                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Kampanya
-                                fiyatından
-                                satılmak üzere 100 adetten fazla stok sunulmuştur.</li>
-                            <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bir ürün, birden
-                                fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan
-                                ürünlerin
-                                satıcıları
-                                ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki
-                                promosyonlara, kargonun bedava
-                                olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin
-                                stok
-                                ve kategorileri bilgilerine
-                                göre sıralanmaktadır.</li>
-                        </ul>
+                        <div id="featured">
+                            <p>Öne Çıkan Özellikler:</p>
+                            <ul class="propert-items">
+                                <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bu ürün <a
+                                        style="text-decoration: underline; padding-right: 5px; color: rgb(31, 30, 30);"
+                                        href="">Trendyol</a>tarafından gönderilecektir.</li>
+                                <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Kampanya
+                                    fiyatından
+                                    satılmak üzere 100 adetten fazla stok sunulmuştur.</li>
+                                <li style="list-style-type: disc; margin-left: 20px;" class="property-item">Bir ürün,
+                                    birden
+                                    fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan
+                                    ürünlerin
+                                    satıcıları
+                                    ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine,
+                                    ürünlerdeki
+                                    promosyonlara, kargonun bedava
+                                    olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine,
+                                    ürünlerin
+                                    stok
+                                    ve kategorileri bilgilerine
+                                    göre sıralanmaktadır.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="main-info-item">
-                        <a id="all-property-button" class="go-button" href="/">ÜRÜNÜN TÜM ÖZELLİKLERİ<i
-                                style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+                        <div id="main-info-button">
+                            <a id="all-property-button" class="go-button" href="/">ÜRÜNÜN TÜM ÖZELLİKLERİ<i
+                                    style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -590,7 +798,8 @@
             <section class="main-product-items" id="main-widget">
 
                 <div id="store-about" class="widget-item">
-                    <div style="background-color: #ebf5ff; display: inline-block; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 60px; border-radius: 10px;"
+                    <p id="product-campaign" style="font-size: 14px; color: gray;">ÜRÜNÜN KAMPANYALARI</p>
+                    <div style="background-color: #ebf5ff; display: inline-block; border-radius: 10px;"
                         class="trendyol">
                         <a style="color: blue; font-size: 18px;" href="/">Trendyol<i style="padding-left: 5px;"
                                 class="fa-solid fa-circle-check"></i>
@@ -629,10 +838,13 @@
                         Kargo
                         Bedava</p>
                     <h1 id="other-seller-price" style="color: rgb(255, 108, 54);">364,90 TL</h1>
-                    <a id="see-all" class="go-button"
-                        style="display: inline-block; background-color: aquamarine; padding: 10px 50px; border-radius: 20px; background-color: rgb(228, 228, 255);"
-                        href="/">TÜMÜNÜ
-                        GÖR<i style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+
+                    <div id="see-all-container">
+                        <a id="see-all" class="go-button"
+                            style="background-color: aquamarine; padding: 13px 25px; border-radius: 20px; background-color: rgb(228, 228, 255);"
+                            href="/">TÜMÜNÜ
+                            GÖR<i style="padding-left: 10px;" class="fa-solid fa-chevron-right"></i></a>
+                    </div>
 
 
 
@@ -640,10 +852,6 @@
 
                 <div class="widget-item">
 
-                    <p id="featured-comment" style="font-size: 14px; color: gray;">ÖNE ÇIKAN YORUM</p>
-                    <div class="user-suggestion">
-                        <p><img src="images/askı.png" alt="">Kullanıcıların çoğu kendi bedeninizi almanızı öneriyor.</p>
-                    </div>
                     <div class="rating">
                         <input type="radio" name="rating" value="5" id="5">
                         <label for="5"><i class="fa-solid fa-star"></i></label>
@@ -659,7 +867,7 @@
                     <p id="comment-example">anneme hediye almıştım beden M-XL ama bu standart beden olmasına rağmen
                         üstüne ço...</p>
                     <a id="read-more" href="/">Devamını Oku<i class="fa-solid fa-chevron-right"></i></a>
-                    <p>M** Ş** 25 Ocak 2023</p>
+                    <p style="height: 50px;">M** Ş** 25 Ocak 2023</p>
                     <a class="go-button" href="/">DAHA FAZLA YORUM<i style="padding-left: 10px;"
                             class="fa-solid fa-chevron-right"></i></a>
                 </div>
@@ -667,17 +875,6 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p>&copy;2023 DSM Grup Danışmanlık İletişim ve Satış Tic.A.Ş.-Her Hakkı Saklıdır.</p>
-        </div>
-        <nav class="footer-nav">
-            <a href="/">Çerez Tercihleri</a>
-            <a href="/">KVK ve Gizlilik Politikası</a>
-            <a href="/">DSM Grup</a>
-            <a href="/">Kullanım Koşullar</a>
-        </nav>
-    </footer>
 
 </body>
 
