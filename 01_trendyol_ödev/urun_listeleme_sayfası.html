@@ -9,33 +9,40 @@
     <title>Trendyol</title>
 
     <style>
-        main a {
-            height: 500px;
-        }
-
         .container {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
         }
 
         .product-container {
             width: 100%;
             height: 600px;
+        }
+
+        #product-container-items {
+            height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            column-gap: 20px;
         }
 
         .product-items {
+            width: 100%;
             height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        .prudoct-card {
-            height: 700px;
+        .product-card {
+            width: 80%;
+            height: 400px;
+        }
+
+
+        .image>img {
+            width: 85%;
+            height: 100%;
+            border-radius: 10px;
         }
 
         .image {
@@ -55,10 +62,10 @@
         .title {
             font-weight: 500;
             color: gray;
-            width: 280px;
+            width: 200px;
             margin-bottom: 10px;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 13px;
         }
 
         .sale {
@@ -83,161 +90,175 @@
 
 <body>
 
-    <header class="main-header">
-        <div class="announcement">
-            <a href="/">
-                <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
-            </a>
-        </div>
-
-        <div class="first-menu">
-            <ul class="first-menu-items">
-                <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
-                <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
-                <li class="first-menu-item"><a href="/">Hakkımızda</a></li>
-                <li class="first-menu-item"><a href="/">Yardım & Destek</a></li>
-            </ul>
-        </div>
-
-        <div class="navbar">
-            <a class="main-logo" href="/">
-                <img src="images/trendyol-100.yıl.png" style="width: 280px; height: 50px" alt="" />
-            </a>
-
-            <div class="main-search">
-                <input class="search-text" type="text" value="Aradığınız ürün, kategori veya markayı yazınız" />
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <header>
+        <div class="main-header">
+            <div class="announcement">
+                <a href="/">
+                    <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
+                </a>
             </div>
 
-            <nav class="second-menu">
-                <ul class="second-menu-items">
-                    <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
-
-                    <li>
-                        <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
-                    </li>
+            <div class="first-menu">
+                <ul class="first-menu-items">
+                    <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
+                    <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
+                    <li style="width: 7%;" class="first-menu-item"><a href="/">Hakkımızda</a></li>
+                    <li style="width: 8%;" class="first-menu-item"><a href="/">Yardım & Destek</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
 
-        <div class="header-categories">
-            <nav class="header-categories-items">
-                <ul>
-                    <li class="categories-item"><a href="/">Kadın</a></li>
-                    <li class="categories-item"><a href="/">Erkek</a></li>
-                    <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
-                    <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
-                    <li class="categories-item"><a href="/">Süpermarket</a></li>
-                    <li class="categories-item"><a href="/">Kozmetik</a></li>
-                    <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
-                    <li class="categories-item"><a href="/">Elektronik</a></li>
-                    <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
-                    <li style="color: red; font-weight: 500;" class="categories-item-new">
-                        <a href="/">Çok Satanlar</a> Yeni
-                    </li>
-                    <li style="color: red; font-weight: 500;" class="categories-item-new">
-                        <a href="/">Flaş Ürünler</a> Yeni
-                    </li>
+            <div class="navbar">
+                <a class="header-logo" href="/">
+                    <img src="images/trendyol-100.yıl-logo2.png" alt="" />
+                </a>
 
-                </ul>
-            </nav>
-            <hr style="margin: 12px 0" />
+                <div class="header-search">
+                    <input class="search-text" type="text"
+                        placeholder="Aradığınız ürün, kategori veya markayı yazınız" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <nav class="second-menu">
+                    <ul class="second-menu-items">
+                        <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
+
+                        <li>
+                            <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-categories">
+                <nav class="header-categories-items">
+                    <ul>
+                        <li style="width: 60px;" class="categories-item"><a href="/">Kadın</a></li>
+                        <li style="width: 60px;" class="categories-item"><a href="/">Erkek</a></li>
+                        <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
+                        <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
+                        <li class="categories-item"><a href="/">Süpermarket</a></li>
+                        <li class="categories-item"><a href="/">Kozmetik</a></li>
+                        <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
+                        <li class="categories-item"><a href="/">Elektronik</a></li>
+                        <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
+                        <li style="color: red; font-weight: 500;" class="categories-item-new">
+                            <a href="/">Çok Satanlar</a> Yeni
+                        </li>
+                        <li style="color: red; font-weight: 500;" class="categories-item-new">
+                            <a href="/">Flaş Ürünler</a> Yeni
+                        </li>
+
+                    </ul>
+                </nav>
+                <hr style="margin: 12px 0" />
+            </div>
+            </section>
         </div>
-        </section>
     </header>
 
     <main class="container">
-        <h1 style="margin-left: 50px; margin-top: 60px;">Sana Özel Ürünler</h1>
+        <h1>Sana Özel Ürünler</h1>
         <div class="product-container">
-            <div class="product-items">
-                <a class="product-card" href="urun_detay_sayfası.html">
-                    <div class="image">
-                        <img src="images/BiancoLucci.webp" alt="">
-                        <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
-                            src="images/encoksatan.webp" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="title"><b style="color: black; margin-right: 5px;">Bianco Lucci</b>Kadın Yakası
-                            İlikli Balıkçı Yaka
-                            Çizgili Triko Kazak</div>
-                        <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı</div>
-                        <div class="price"><del style="color: black; padding-right: 5px;">290,13</del>268 TL</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="product-items">
-                <a class="product-card" href="/">
-                    <div class="image">
-                        <img src="images/TrendyolMilla.webp" alt="">
-                        <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
-                            src="images/avantajlıürün.webp" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="title"><b style="color: black; margin-right: 5px;">TRENDYOLMİLLA</b> Siyah Yüksek
-                            Bel Dokuma Pantolon</div>
-                        <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 7 Günün En Düşük Fiyatı</div>
-                        <div class="price">192,99 TL</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="product-items">
-                <a class="product-card" href="/">
-                    <div class="image">
-                        <img src="images/Siyahİnci.webp" alt="">
-                        <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
-                            src="images/encoksatan.webp" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="title"><b style="color: black; margin-right: 5px;">Siyah İnci</b>Siyah-beyaz Pamuklu
-                            Düğmeli Biyeli Pijama Takım</div>
-                        <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 7 Günün En Düşük Fiyatı</div>
-                        <div class="price">179,99 TL</div>
-
-                    </div>
-                </a>
-            </div>
-
-            <div class="product-items">
-                <a class="product-card" href="/">
-                    <div class="image">
-                        <img src="images/JoseClothing.webp" alt="">
-                        <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
-                            src="images/avantajlıürün2.webp" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="title"><b style="color: black; margin-right: 5px;">Jose Clothing</b> Kadın Polo Yaka
-                            Siyah Beyaz Çizgili Uzun Kollu Triko Kazak
+            <div id="product-container-items">
+                <div class="product-items">
+                    <a class="product-card" href="urun_detay_sayfası.html">
+                        <div class="image">
+                            <img src="images/BiancoLucci.webp" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
+                                src="images/encoksatan.webp" alt="">
                         </div>
-                        <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı</div>
-                        <div class="price"><del style="color: black; padding-right: 5px;">219.99</del>150 TL</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="product-items">
-                <a class="product-card" href="/">
-                    <div class="image">
-                        <img src="images/Riccon.webp" alt="">
-                        <img class="star" style="width: 80px; height: 30px; border-radius: 5px;"
-                            src="images/kargobedava.png" alt="">
-                        <img class="star" style="width: 90px; height: 90px; border-radius: 50%; top:50px;"
-                            src="images/avantajlıürün2.webp" alt="">
-
-                    </div>
-                    <div class="info">
-                        <div class="title"><b style="color: black; margin-right: 5px;">Riccon</b>Siyah Kadın Fermuarlı
-                            Bot
+                        <div class="info">
+                            <div class="title"><b style="color: black; margin-right: 5px;">Bianco Lucci</b>Kadın Yakası
+                                İlikli Balıkçı Yaka
+                                Çizgili Triko Kazak</div>
+                            <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı
+                            </div>
+                            <div class="price"><del style="color: black; padding-right: 5px;">290,13</del>268 TL</div>
                         </div>
-                        <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı</div>
-                        <div style="color: orangered; font-size: 20px;" class="price">437,70 TL</div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
+                <div class="product-items">
+                    <a class="product-card" href="/">
+                        <div class="image">
+                            <img src="images/TrendyolMilla.webp" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
+                                src="images/avantajlıürün.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title"><b style="color: black; margin-right: 5px;">TRENDYOLMİLLA</b> Siyah
+                                Yüksek
+                                Bel Dokuma Pantolon</div>
+                            <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 7 Günün En Düşük Fiyatı
+                            </div>
+                            <div class="price">192,99 TL</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-items">
+                    <a class="product-card" href="/">
+                        <div class="image">
+                            <img src="images/Siyahİnci.webp" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
+                                src="images/encoksatan.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title"><b style="color: black; margin-right: 5px;">Siyah İnci</b>Siyah-beyaz
+                                Pamuklu
+                                Düğmeli Biyeli Pijama Takım</div>
+                            <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 7 Günün En Düşük Fiyatı
+                            </div>
+                            <div class="price">179,99 TL</div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-items">
+                    <a class="product-card" href="/">
+                        <div class="image">
+                            <img src="images/JoseClothing.webp" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%;"
+                                src="images/avantajlıürün2.webp" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title"><b style="color: black; margin-right: 5px;">Jose Clothing</b> Kadın Polo
+                                Yaka
+                                Siyah Beyaz Çizgili Uzun Kollu Triko Kazak
+                            </div>
+                            <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı
+                            </div>
+                            <div class="price"><del style="color: black; padding-right: 5px;">219.99</del>150 TL</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-items">
+                    <a class="product-card" href="/">
+                        <div class="image">
+                            <img src="images/Riccon.webp" alt="">
+                            <img class="star" style="width: 80px; height: 30px; border-radius: 5px;"
+                                src="images/kargobedava.png" alt="">
+                            <img class="star" style="width: 90px; height: 90px; border-radius: 50%; top:50px;"
+                                src="images/avantajlıürün2.webp" alt="">
+
+                        </div>
+                        <div class="info">
+                            <div class="title"><b style="color: black; margin-right: 5px;">Riccon</b>Siyah Kadın
+                                Fermuarlı
+                                Bot
+                            </div>
+                            <div class="sale"><i class="fa-solid fa-arrow-trend-down"></i>Son 30 Günün En Düşük Fiyatı
+                            </div>
+                            <div style="color: orangered; font-size: 20px;" class="price">437,70 TL</div>
+                        </div>
+                    </a>
+                </div>
             </div>
 
         </div>

@@ -10,22 +10,23 @@
 
     <style>
         #main-shopping-cart {
-            width: 1700px;
+            width: 1200px;
             height: 600px;
         }
 
+
         #main-shopping-cart-container {
-            width: 90%;
+            width: 100%;
             height: 100%;
-            background-color: aqua;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-left: 90px;
         }
 
         #my-cart {
-            width: 70%;
+            width: 80%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -79,6 +80,7 @@
             width: 100%;
             height: 150px;
             border-radius: 10px;
+            padding-right: 20px;
         }
 
         #images-checkbox {
@@ -88,7 +90,7 @@
         #images-checkbox a {
             display: table-cell;
             vertical-align: middle;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 400;
         }
 
@@ -108,7 +110,7 @@
         }
 
         #selected-product-price>h1 {
-            font-size: 25px;
+            font-size: 20px;
             color: orangered
         }
 
@@ -119,17 +121,14 @@
             align-items: center;
         }
 
-        .confirm-cart-container {
-            width: 100%;
+        #confirm-cart {
+            width: 20%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
         }
 
         .confirm-button {
             height: 20%;
+
         }
 
         #order-abstract {
@@ -138,93 +137,142 @@
 
         #order-abstract {
             width: 100%;
+            height: 100%;
+        }
+
+        table {
+            border: 1px solid rgb(231, 231, 231);
+        }
+
+        th {
+            padding: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: start;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .column-price {
+            font-size: 17px;
+            color: black;
+            font-weight: 700;
+            text-align: end;
+        }
+
+        .column-price-orange {
+            font-size: 17px;
+            font-weight: 700;
+            color: #f27a1a;
+            text-align: end;
+        }
+
+        .confirm-button {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+        }
+
+        .confirm-button>a {
+            display: inline-block;
+            width: 100%;
+            background-color: #f27a1a;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            padding: 11px 0;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
 
-    <header class="main-header">
-        <div class="announcement">
-            <a href="/">
-                <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
-            </a>
-        </div>
-
-        <div class="first-menu">
-            <ul class="first-menu-items">
-                <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
-                <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
-                <li class="first-menu-item"><a href="/">Hakkımızda</a></li>
-                <li class="first-menu-item"><a href="/">Yardım & Destek</a></li>
-            </ul>
-        </div>
-
-        <div class="navbar">
-            <a class="main-logo" href="/">
-                <img src="images/trendyol-100.yıl.png" style="width: 280px; height: 50px" alt="" />
-            </a>
-
-            <div class="main-search">
-                <input class="search-text" type="text" value="Aradığınız ürün, kategori veya markayı yazınız" />
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <header>
+        <div class="main-header">
+            <div class="announcement">
+                <a href="/">
+                    <img class="announcement-item" src="images/7-12Kasım-Süper-Alışveriş-Günleri.png" alt="" />
+                </a>
             </div>
 
-            <nav class="second-menu">
-                <ul class="second-menu-items">
-                    <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
-
-                    <li>
-                        <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
-                    </li>
+            <div class="first-menu">
+                <ul class="first-menu-items">
+                    <li class="first-menu-item"><a href="/">İndirim Kuponlarım</a></li>
+                    <li class="first-menu-item"><a href="/">Trendyol'da Satış Yap</a></li>
+                    <li style="width: 7%;" class="first-menu-item"><a href="/">Hakkımızda</a></li>
+                    <li style="width: 8%;" class="first-menu-item"><a href="/">Yardım & Destek</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
 
-        <div class="header-categories">
-            <nav class="header-categories-items">
-                <ul>
-                    <li class="categories-item"><a href="/">Kadın</a></li>
-                    <li class="categories-item"><a href="/">Erkek</a></li>
-                    <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
-                    <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
-                    <li class="categories-item"><a href="/">Süpermarket</a></li>
-                    <li class="categories-item"><a href="/">Kozmetik</a></li>
-                    <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
-                    <li class="categories-item"><a href="/">Elektronik</a></li>
-                    <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
-                    <li style="color: red; font-weight: 500;" class="categories-item-new">
-                        <a href="/">Çok Satanlar</a> Yeni
-                    </li>
-                    <li style="color: red; font-weight: 500;" class="categories-item-new">
-                        <a href="/">Flaş Ürünler</a> Yeni
-                    </li>
+            <div class="navbar">
+                <a class="header-logo" href="/">
+                    <img src="images/trendyol-100.yıl-logo2.png" alt="" />
+                </a>
 
-                </ul>
-            </nav>
-            <hr style="margin: 12px 0" />
+                <div class="header-search">
+                    <input class="search-text" type="text"
+                        placeholder="Aradığınız ürün, kategori veya markayı yazınız" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <nav class="second-menu">
+                    <ul class="second-menu-items">
+                        <li><i class="fa-regular fa-user"></i><a href="/">Giriş Yap</a></li>
+
+                        <li>
+                            <i class="fa-regular fa-heart"></i><a href="/">Favorilerim</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i><a href="/">Sepetim</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-categories">
+                <nav class="header-categories-items">
+                    <ul>
+                        <li style="width: 60px;" class="categories-item"><a href="/">Kadın</a></li>
+                        <li style="width: 60px;" class="categories-item"><a href="/">Erkek</a></li>
+                        <li class="categories-item"><a href="/">Anne & Çocuk</a></li>
+                        <li class="categories-item"><a href="/">Ev & Yaşam</a></li>
+                        <li class="categories-item"><a href="/">Süpermarket</a></li>
+                        <li class="categories-item"><a href="/">Kozmetik</a></li>
+                        <li class="categories-item"><a href="/">Ayakkabı & Çanta</a></li>
+                        <li class="categories-item"><a href="/">Elektronik</a></li>
+                        <li class="categories-item"><a href="/">Spor & Outdoor</a></li>
+                        <li style="color: red; font-weight: 500;" class="categories-item-new">
+                            <a href="/">Çok Satanlar</a> Yeni
+                        </li>
+                        <li style="color: red; font-weight: 500;" class="categories-item-new">
+                            <a href="/">Flaş Ürünler</a> Yeni
+                        </li>
+
+                    </ul>
+                </nav>
+                <hr style="margin: 12px 0" />
+            </div>
+            </section>
         </div>
-        </section>
     </header>
 
     <main id="main-shopping-cart">
         <div id="main-shopping-cart-container">
             <section id="my-cart">
                 <div class="my-cart-container">
-                    <h1 style="margin-bottom: 30px; font-weight: 500; font-size: 30px;">Sepetim (1 Ürün)</h1>
+                    <h1 style="margin-bottom: 30px; font-weight: 500; font-size: 25px;">Sepetim (1 Ürün)</h1>
                     <div id="Login-items">
-                        <i style="font-size: 25px; padding: 0 15px;" class="fa-regular fa-user"></i>
-                        <p style="font-size: 18px; font-weight: 500; margin-right: 10px;">Alışverişini daha hızlı
+                        <i style="font-size: 18px; padding-right: 15px;" class="fa-regular fa-user"></i>
+                        <p style="font-size: 14px; font-weight: 500; margin-right: 5px;">Alışverişini daha hızlı
                             tamamlamak için</p>
-                        <a style="text-decoration: underline; color: orange; font-weight: 500; font-size: 18px;"
+                        <a style="text-decoration: underline; color: orange; font-weight: 500; font-size: 14px;"
                             href="/">Giriş Yap</a>
                     </div>
                 </div>
@@ -233,12 +281,14 @@
                     <div id="bianco-lucci-seller">
                         <input type="checkbox" id="seller">
                         <label for="seller-checkbox">
-                            <p style="display: inline-block; font-size: 18px; color: gray;">Satıcı:<a href="/"></a>
+                            <p style="display: inline-block; font-size: 13px; color: gray; margin-right: 5px;">Satıcı:<a
+                                    href="/"></a>
                                 <span style="color: black;">BIANCO LUCCI</span>
                             </p>
-                            <a style="font-size: 13px; color: white; background-color: green; padding: 0 5px; border-radius: 5px;"
+                            <a style="font-size: 11px; color: white; background-color: green; padding: 0 5px; border-radius: 5px; margin-right: 10px;"
                                 href="/">8.6</a>
-                            <a href="/"><i class="fa-solid fa-chevron-right"></i></a>
+                            <a style="font-size: 12px; color: gray;" href="/"><i
+                                    class="fa-solid fa-chevron-right"></i></a>
                         </label>
 
                     </div>
@@ -270,21 +320,41 @@
             </section>
 
             <section id="confirm-cart">
-                <div class="confirm-cart-container">
-                    <div class="confirm-button">Siparişi Onayla</div>
-
+                <div class="confirm-button"><a href="/">Sepeti Onayla</a></div>
+                <div class="confirm-cart-abstract">
                     <div id="order-abstract">
-
-                        <h1>Sipariş Özeti</h1>
                         <div id="total-price-container">
-                            <div>hhhh</div>
+                            <table id="label-price">
 
+                                <tr class="abstract-row">
+                                    <th colspan="2">Sipariş Özeti</th>
+
+                                </tr>
+
+                                <tr class="abstract-row">
+                                    <td>Ürünün Toplamı</td>
+                                    <td class="column-price">536 TL</td>
+                                </tr>
+
+                                <tr class="abstract-row">
+                                    <td>Kargo Toplam</td>
+                                    <td class="column-price">29,99TL</td>
+                                </tr>
+
+                                <tr class="abstract-row">
+                                    <td>150 TL ve Üzeri Kargo Bedava (Satıcı Karşılar)</td>
+                                    <td class="column-price-orange">-29,99TL</td>
+                                </tr>
+
+                                <tr class="abstract-row">
+                                    <td class="column-price-orange" colspan="2">536TL</td>
+                                </tr>
+
+                            </table>
                         </div>
-                        <div id="total-price">hhhhhh</div>
                     </div>
-                    <div class="confirm-button">Siparişi Onayla</div>
-
                 </div>
+                <div class="confirm-button"><a href="/">Sepeti Onayla</a></div>
             </section>
         </div>
 
